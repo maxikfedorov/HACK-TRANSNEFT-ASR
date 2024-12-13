@@ -1,0 +1,26 @@
+[
+    {
+        "task": "design of a new layout",
+        "start_time": "02:00",
+        "end_time": "03:30",
+        "duration": "1 hour 30 minutes"
+    },
+    {
+        "task": "design of a new layout",
+        "start_time": "02:00",
+        "end_time": "03:30",
+        "duration": "1 hour 30 minutes"
+    },
+    {
+        "task": "Conducted training for employees",
+        "start_time": "13:00",
+        "end_time": "15:30",
+        "duration": "2 hours 30 minutes"
+    },
+    {
+        "task": "Conducted training for employees",
+        "start_time": "13:00",
+        "end_time": "15:30",
+        "duration": "2 hours 30 minutes"
+    }
+]

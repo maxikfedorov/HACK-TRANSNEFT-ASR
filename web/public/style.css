@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #5cd3c8;
+    --background-color: #f8fafc;
+    --text-color: #2c3e50;
+    --border-radius: 12px;
+    --transition-speed: 0.3s;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.text-gradient {
+    background: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Drop Zone Styles */
+.upload-container {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.drop-zone {
+    padding: 2rem;
+    text-align: center;
+    border: 2px dashed #e2e8f0;
+    border-radius: var(--border-radius);
+    transition: all var(--transition-speed);
+    cursor: pointer;
+}
+
+.drop-zone.drag-over {
+    background-color: rgba(74, 144, 226, 0.05);
+    border-color: var(--primary-color);
+}
+
+.drop-zone-content i {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.file-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: rgba(74, 144, 226, 0.05);
+    border-radius: var(--border-radius);
+}
+
+.btn-remove {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: color var(--transition-speed);
+}
+
+.btn-remove:hover {
+    color: #bd2130;
+}
+
+/* Process Button */
+.btn-primary {
+    background: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+    border: none;
+    padding: 0.8rem 2rem;
+    transition: transform var(--transition-speed);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+/* Result Card */
+.result-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all var(--transition-speed);
+}
+
+.result-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.transcription-text {
+    max-height: 300px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
