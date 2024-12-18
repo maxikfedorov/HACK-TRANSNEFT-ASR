@@ -300,5 +300,131 @@
         ],
         "id": "e1c3095b",
         "timestamp": "2024-12-19 01:36:34"
+    },
+    {
+        "tasks": [
+            {
+                "task": "Обучение сотрудников",
+                "start_time": "13:00",
+                "end_time": "15:30",
+                "duration": "2 hours 30 minutes"
+            }
+        ],
+        "id": "ddf55de2",
+        "timestamp": "2024-12-19 01:47:04"
+    },
+    {
+        "tasks": [
+            {
+                "task": "Подготовка отчета",
+                "start_time": "09:00",
+                "end_time": "11:30",
+                "duration": "2 hours 30 minutes"
+            },
+            {
+                "task": "Встреча с командой",
+                "start_time": "11:00",
+                "end_time": "11:15",
+                "duration": "15 minutes"
+            },
+            {
+                "task": "Работа над презентацией для клиента",
+                "start_time": "14:00",
+                "end_time": "15:00",
+                "duration": "1 hour"
+            }
+        ],
+        "id": "8f0c6403",
+        "timestamp": "2024-12-19 01:50:56"
+    },
+    {
+        "tasks": [
+            {
+                "task": "Работа над отчетом по проекту",
+                "start_time": "09:00",
+                "end_time": "10:00",
+                "duration": "1 hour"
+            },
+            {
+                "task": "Созвон с заказчиком",
+                "start_time": "10:30",
+                "end_time": "11:00",
+                "duration": "30 minutes"
+            },
+            {
+                "task": "Участие в командной встрече",
+                "start_time": "11:15",
+                "end_time": "12:00",
+                "duration": "45 minutes"
+            },
+            {
+                "task": "Подготовка презентации",
+                "start_time": "13:00",
+                "end_time": "14:00",
+                "duration": "1 hour"
+            }
+        ],
+        "id": "07dfb897",
+        "timestamp": "2024-12-19 02:01:37"
+    },
+    {
+        "tasks": [
+            {
+                "task": "Работа над отчетом по проекту",
+                "start_time": "09:00",
+                "end_time": "10:00",
+                "duration": "1 hour"
+            },
+            {
+                "task": "Созвон с заказчиком",
+                "start_time": "10:30",
+                "end_time": "11:00",
+                "duration": "30 minutes"
+            },
+            {
+                "task": "Участие в командной встрече",
+                "start_time": "11:15",
+                "end_time": "12:00",
+                "duration": "45 minutes"
+            },
+            {
+                "task": "Подготовка презентации",
+                "start_time": "13:00",
+                "end_time": "14:00",
+                "duration": "1 hour"
+            }
+        ],
+        "id": "637526a3",
+        "timestamp": "2024-12-19 02:11:24"
+    },
+    {
+        "tasks": [
+            {
+                "task": "Работа над отчетом по проекту",
+                "start_time": "09:00",
+                "end_time": "10:00",
+                "duration": "1 hour"
+            },
+            {
+                "task": "Созвон с заказчиком",
+                "start_time": "10:30",
+                "end_time": "11:00",
+                "duration": "30 minutes"
+            },
+            {
+                "task": "Участие в командной встрече",
+                "start_time": "11:15",
+                "end_time": "12:00",
+                "duration": "45 minutes"
+            },
+            {
+                "task": "Подготовка презентации",
+                "start_time": "13:00",
+                "end_time": "14:00",
+                "duration": "1 hour"
+            }
+        ],
+        "id": "1d92acfb",
+        "timestamp": "2024-12-19 02:12:59"
     }
 ]
