@@ -135,23 +135,63 @@ document.addEventListener('DOMContentLoaded', () => {
         const transcriptionText = document.getElementById('transcriptionText');
         const formalizedData = document.getElementById('formalizedData');
 
+        // Отображаем имя файла и транскрибированный текст
         resultFileName.textContent = data.transcription.audio_file_name;
         transcriptionText.textContent = data.transcription.text;
 
-        formalizedData.innerHTML = Object.entries(data.formalized_data)
-            .reverse() // добавляем reverse() перед map
-            .map(([key, value]) => `
-        <tr>
-            <td class="fw-medium">${formatKey(key)}</td>
-            <td>${value}</td>
-        </tr>
-    `).join('');
+        // Очищаем предыдущие результаты
+        formalizedData.innerHTML = '';
 
+        // Проверяем наличие tasks в formalized_data
+        if (data.formalized_data && data.formalized_data.tasks) {
+            // Создаем таблицу для каждой задачи
+            data.formalized_data.tasks.forEach((task, index) => {
+                const taskTable = document.createElement('table');
+                taskTable.className = 'table table-bordered mb-4';
+
+                // Создаем заголовок для каждой таблицы
+                const taskHeader = document.createElement('thead');
+                taskHeader.innerHTML = `
+                <tr class="table-primary">
+                    <th colspan="2">Задача ${index + 1}</th>
+                </tr>
+            `;
+                taskTable.appendChild(taskHeader);
+
+                // Создаем тело таблицы с данными задачи
+                const taskBody = document.createElement('tbody');
+                taskBody.innerHTML = `
+                <tr>
+                    <td class="fw-medium">Описание</td>
+                    <td>${task.task}</td>
+                </tr>
+                <tr>
+                    <td class="fw-medium">Время начала</td>
+                    <td>${task.start_time}</td>
+                </tr>
+                <tr>
+                    <td class="fw-medium">Время окончания</td>
+                    <td>${task.end_time}</td>
+                </tr>
+                <tr>
+                    <td class="fw-medium">Длительность</td>
+                    <td>${task.duration}</td>
+                </tr>
+            `;
+                taskTable.appendChild(taskBody);
+
+                // Добавляем таблицу в контейнер
+                formalizedData.appendChild(taskTable);
+            });
+        } else {
+            formalizedData.innerHTML = '<p class="text-danger">Нет данных для отображения</p>';
+        }
 
         resultDiv.classList.remove('d-none');
         resultDiv.classList.add('show');
         resultDiv.scrollIntoView({ behavior: 'smooth' });
     }
+
 
     function formatKey(key) {
         return key.split('_')

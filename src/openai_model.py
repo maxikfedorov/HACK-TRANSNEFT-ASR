@@ -11,7 +11,7 @@ warnings.filterwarnings("ignore")
 
 # Глобальные переменные
 AUDIO_PATH = "../data"
-AUDIO_FILE = os.path.join(AUDIO_PATH, '2.mp3')
+AUDIO_FILE = os.path.join(AUDIO_PATH, '1.mp3')
 LANGUAGE = "ru"
 MODEL_NAME = "large"  # tiny, base, small, medium, large
 RESULTS_DIR = "../results"

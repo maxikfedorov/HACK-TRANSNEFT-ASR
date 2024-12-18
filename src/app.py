@@ -1,3 +1,6 @@
+from datetime import datetime
+import time
+import uuid
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import json
@@ -120,11 +123,24 @@ def transcribe_audio() -> tuple[Dict, int]:
             transcription_data = json.load(file)
 
         perplexity_result = process_transcription(JSON_PATH)
+        
+        # Преобразуем строку JSON в объект Python
+        if perplexity_result:
+            try:
+                formalized_data = json.loads(perplexity_result)
+                # Добавляем метаданные к formalized_data
+                formalized_data.update({
+                    "id": str(uuid.uuid4())[:8],
+                    "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
+                })
+            except json.JSONDecodeError:
+                formalized_data = {'error': 'Ошибка парсинга JSON'}
+        else:
+            formalized_data = {'error': 'Не удалось получить формализованный ответ'}
 
         # Записываем формализованный ответ в time_points.json
         time_points_path = os.path.join(APP_CONFIG['RESULTS_DIR'], 'time_points.json')
         
-        # Загружаем существующие данные или создаем новый список
         if os.path.exists(time_points_path):
             with open(time_points_path, 'r', encoding='utf-8') as file:
                 time_points_data = json.load(file)
@@ -132,15 +148,15 @@ def transcribe_audio() -> tuple[Dict, int]:
             time_points_data = []
 
         # Добавляем новый элемент в список
-        time_points_data.append(perplexity_result or {'error': 'Не удалось получить формализованный ответ'})
+        time_points_data.append(formalized_data)
 
-        # Сохраняем обновленные данные обратно в файл
+        # Сохраняем обновленные данные
         with open(time_points_path, 'w', encoding='utf-8') as file:
             json.dump(time_points_data, file, ensure_ascii=False, indent=4)
 
         response_data = {
             'transcription': transcription_data,
-            'formalized_data': perplexity_result or {'error': 'Не удалось получить формализованный ответ'}
+            'formalized_data': formalized_data
         }
 
         return jsonify(response_data), 200

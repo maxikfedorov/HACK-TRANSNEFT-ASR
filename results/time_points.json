@@ -22,5 +22,283 @@
         "start_time": "13:00",
         "end_time": "15:30",
         "duration": "2 hours 30 minutes"
+    },
+    {
+        "task": "Работа над проектом по программированию",
+        "start_time": "10:00",
+        "end_time": "12:30",
+        "duration": "2 hours 30 minutes"
+    },
+    {
+        "error": "Не удалось получить формализованный ответ"
+    },
+    "{\n  \"tasks\": [\n    {\n      \"task\": \"Подготовка отчета\",\n      \"start_time\": \"09:00\",\n      \"end_time\": \"11:30\",\n      \"duration\": \"2 hours 30 minutes\"\n    },\n    {\n      \"task\": \"Встреча с командой\",\n      \"start_time\": \"11:00\",\n      \"end_time\": \"11:15\",\n      \"duration\": \"15 minutes\"\n    },\n    {\n      \"task\": \"Работа над презентацией для клиента\",\n      \"start_time\": \"14:00\",\n      \"end_time\": \"16:00\",\n      \"duration\": \"2 hours\"\n    }\n  ]\n}",
+    {
+        "tasks": [
+            {
+                "task": "Работа над проектом по программированию",
+                "start_time": "10:00",
+                "end_time": "12:30",
+                "duration": "2 hours 30 minutes"
+            }
+        ]
+    },
+    {
+        "tasks": [
+            {
+                "task": "Подготовка отчета",
+                "start_time": "09:00",
+                "end_time": "11:30",
+                "duration": "2 hours 30 minutes"
+            },
+            {
+                "task": "Встреча с командой",
+                "start_time": "11:00",
+                "end_time": "11:15",
+                "duration": "15 minutes"
+            },
+            {
+                "task": "Работа над презентацией для клиента",
+                "start_time": "14:00",
+                "end_time": "15:00",
+                "duration": "1 hour"
+            }
+        ]
+    },
+    {
+        "tasks": [
+            {
+                "task": "Работа над проектом по программированию",
+                "start_time": "10:00",
+                "end_time": "12:30",
+                "duration": "2 hours 30 minutes"
+            }
+        ]
+    },
+    {
+        "tasks": [
+            {
+                "task": "Работа над проектом по программированию",
+                "start_time": "10:00",
+                "end_time": "12:30",
+                "duration": "2 hours 30 minutes"
+            }
+        ]
+    },
+    {
+        "tasks": [
+            {
+                "task": "Подготовка отчета",
+                "start_time": "09:00",
+                "end_time": "11:30",
+                "duration": "2 hours 30 minutes"
+            },
+            {
+                "task": "Встреча с командой",
+                "start_time": "11:00",
+                "end_time": "11:15",
+                "duration": "15 minutes"
+            },
+            {
+                "task": "Работа над презентацией для клиента",
+                "start_time": "14:00",
+                "end_time": "15:00",
+                "duration": "1 hour"
+            }
+        ]
+    },
+    {
+        "tasks": [
+            {
+                "task": "дизайн нового макета",
+                "start_time": "02:00",
+                "end_time": "03:30",
+                "duration": "1 hour 30 minutes"
+            }
+        ]
+    },
+    {
+        "tasks": [
+            {
+                "task": "дизайн нового макета",
+                "start_time": "02:00",
+                "end_time": "03:30",
+                "duration": "1 hour 30 minutes"
+            }
+        ]
+    },
+    {
+        "tasks": [
+            {
+                "task": "Подготовка отчета",
+                "start_time": "09:00",
+                "end_time": "11:30",
+                "duration": "2 hours 30 minutes"
+            },
+            {
+                "task": "Встреча с командой",
+                "start_time": "11:00",
+                "end_time": "11:15",
+                "duration": "15 minutes"
+            },
+            {
+                "task": "Работа над презентацией для клиента",
+                "start_time": "14:00",
+                "end_time": "15:00",
+                "duration": "1 hour"
+            }
+        ]
+    },
+    {
+        "tasks": [
+            {
+                "task": "Подготовка отчета",
+                "start_time": "09:00",
+                "end_time": "11:30",
+                "duration": "2 hours 30 minutes"
+            },
+            {
+                "task": "Встреча с командой",
+                "start_time": "11:00",
+                "end_time": "11:15",
+                "duration": "15 minutes"
+            },
+            {
+                "task": "Работа над презентацией для клиента",
+                "start_time": "14:00",
+                "end_time": "16:00",
+                "duration": "2 hours"
+            }
+        ]
+    },
+    {
+        "tasks": [
+            {
+                "task": "Подготовка отчета",
+                "start_time": "09:00",
+                "end_time": "11:30",
+                "duration": "2 hours 30 minutes"
+            },
+            {
+                "task": "Встреча с командой",
+                "start_time": "11:00",
+                "end_time": "11:15",
+                "duration": "15 minutes"
+            },
+            {
+                "task": "Работа над презентацией для клиента",
+                "start_time": "14:00",
+                "end_time": "15:00",
+                "duration": "1 hour"
+            }
+        ]
+    },
+    {
+        "tasks": [
+            {
+                "task": "Подготовка отчета",
+                "start_time": "09:00",
+                "end_time": "11:30",
+                "duration": "2 hours 30 minutes"
+            },
+            {
+                "task": "Встреча с командой",
+                "start_time": "11:00",
+                "end_time": "11:15",
+                "duration": "15 minutes"
+            },
+            {
+                "task": "Работа над презентацией для клиента",
+                "start_time": "14:00",
+                "end_time": "15:00",
+                "duration": "1 hour"
+            }
+        ],
+        "id": "b52adb75",
+        "timestamp": "2024-12-19 01:00:49"
+    },
+    {
+        "tasks": [
+            {
+                "task": "Подготовка отчета",
+                "start_time": "09:00",
+                "end_time": "11:30",
+                "duration": "2 hours 30 minutes"
+            },
+            {
+                "task": "Встреча с командой",
+                "start_time": "11:00",
+                "end_time": "11:15",
+                "duration": "15 minutes"
+            },
+            {
+                "task": "Работа над презентацией для клиента",
+                "start_time": "14:00",
+                "end_time": "15:00",
+                "duration": "1 hour"
+            }
+        ],
+        "id": "f7d0efeb",
+        "timestamp": "2024-12-19 01:01:20"
+    },
+    {
+        "tasks": [
+            {
+                "task": "Готовила чё.",
+                "start_time": "16:00",
+                "end_time": "15:06",
+                "duration": "12 hours 54 minutes"
+            }
+        ],
+        "id": "2ea84eb4",
+        "timestamp": "2024-12-19 01:02:15"
+    },
+    {
+        "tasks": [
+            {
+                "task": "Работа над проектом по программированию",
+                "start_time": "10:00",
+                "end_time": "12:30",
+                "duration": "2 hours 30 minutes"
+            }
+        ],
+        "id": "29aa0576",
+        "timestamp": "2024-12-19 01:02:42"
+    },
+    {
+        "tasks": [
+            {
+                "task": "Подготовка отчета",
+                "start_time": "09:00",
+                "end_time": "11:30",
+                "duration": "2 hours 30 minutes"
+            },
+            {
+                "task": "Встреча с командой",
+                "start_time": "11:00",
+                "end_time": "11:15",
+                "duration": "15 minutes"
+            },
+            {
+                "task": "Работа над презентацией для клиента",
+                "start_time": "14:00",
+                "end_time": "15:00",
+                "duration": "1 hour"
+            }
+        ],
+        "id": "b4038172",
+        "timestamp": "2024-12-19 01:36:15"
+    },
+    {
+        "tasks": [
+            {
+                "task": "Работа над проектом по программированию",
+                "start_time": "10:00",
+                "end_time": "12:30",
+                "duration": "2 hours 30 minutes"
+            }
+        ],
+        "id": "e1c3095b",
+        "timestamp": "2024-12-19 01:36:34"
     }
 ]
